@@ -46,3 +46,24 @@ const reducer = (state={}, action) => {
 const createStore = () => reduxCreateStore(combineReducers({reducer}), initialState)
 export default createStore
 ```
+
+final version
+```js
+import { combineReducers, createStore as reduxCreateStore } from 'redux'
+
+const reducer = (state = 0, action) => {
+  if (action.type === `INCREMENT`) {
+    return state + 1
+  }
+  return state
+}
+
+const root = combineReducers({
+  count: reducer,
+})
+
+const createStore = () => reduxCreateStore(root)
+
+export default createStore
+
+```
