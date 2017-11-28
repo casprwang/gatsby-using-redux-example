@@ -7,6 +7,7 @@ import createStore from './src/state/createStore'
 exports.replaceRouterComponent = ({ history }) => {
     const store = createStore()
 
+console.log(store.getState())
     const ConnectedRouterWrapper = ({ children }) => (
         <Provider store={store}>
             <Router history={history}>{children}</Router>
