@@ -3,6 +3,8 @@
 https://using-redux.gatsbyjs.org/
 
 Gatsby example site that shows use of redux.
+### Original version
+[https://github.com/gatsbyjs/gatsby/tree/master/examples/using-redux](https://github.com/gatsbyjs/gatsby/tree/master/examples/using-redux)
 
 ### Diff
 in `src/state/createStore.js`
